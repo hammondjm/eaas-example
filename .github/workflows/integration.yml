@@ -23,12 +23,12 @@ jobs:
           labels: csys-obj-parent:$ENV_DEPLOYMENT_ID,csys-obj-type:environment
 env:
   EAAS_BLUEPRINT_ID: eaas-${{ github.run_id }}
-  EAAS_DEPLOYMENT_ID: eaas-prod
-  ENV_DEPLOYMENT_ID: azure
+  EAAS_DEPLOYMENT_ID: e9734aed1b4505103501ebd1b24bcb7a
+  ENV_DEPLOYMENT_ID: 87b710051b0d81103501ebd1b24bcbfe
   # ENV_DEPLOYMENT_ID: aws
   CLOUDIFY_HOST: ${{ secrets.CLOUDIFY_HOST }}
   CLOUDIFY_USERNAME: ${{ secrets.CLOUDIFY_USERNAME }}
   CLOUDIFY_PASSWORD: ${{ secrets.CLOUDIFY_PASSWORD }}
-  CLOUDIFY_TENANT: PROD
+  CLOUDIFY_TENANT: default_tenant
   CLOUDIFY_SSL: ${{ secrets.CLOUDIFY_SSL }}
   CLOUDIFY_SSL_TRUST_ALL: ${{ secrets.CLOUDIFY_SSL_TRUST_ALL }}
